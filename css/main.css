@@ -28,17 +28,29 @@ hr {
 .container_content {
   width: calc(100% - 250px);
 }
+@media (max-width: 480px) {
+  .container_content {
+    width: 100%;
+  }
+}
 
 .header {
   width: calc(100% - 6px);
   margin: auto;
-  height: 52px;
+  min-height: 52px;
   padding: 5px 10px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .header {
+    row-gap: 20px;
+    justify-content: center;
+  }
 }
 .header .icons {
   display: flex;
@@ -118,6 +130,11 @@ hr {
   color: #252525;
   font-size: 1.125rem;
 }
+@media (max-width: 480px) {
+  .sideBar .list p {
+    font-size: 0.9rem;
+  }
+}
 
 .contant {
   width: calc(100% - 50px);
@@ -128,12 +145,24 @@ hr {
   height: 520px;
   padding: 40px 0;
 }
+@media (max-width: 480px) {
+  .contant {
+    width: calc(100% - 30px);
+  }
+}
 .contant h4 {
   padding: 0 20px;
   width: -moz-max-content;
   width: max-content;
   position: relative;
   color: #5d4c72;
+}
+@media (max-width: 480px) {
+  .contant h4 {
+    font-size: 17px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .contant h4::before {
   content: "";
