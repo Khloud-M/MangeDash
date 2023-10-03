@@ -79,6 +79,10 @@ body {
     padding: 15px 0;
     background-color: white;
     box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014!important;
+     @media (max-width:480px) {
+      height:auto !important;
+     
+    }
 
     .logo , .list{
         display: flex;
@@ -150,6 +154,9 @@ body {
     padding: 40px  0;
     @media (max-width:480px) {
       width: calc(100% - 30px);
+    height: 430px;
+
+
       
     }
     h4{
