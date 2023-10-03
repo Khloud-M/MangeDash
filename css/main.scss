@@ -57,6 +57,13 @@ body {
       background: #eeeeee;
       padding: 7px;
       border-radius: 50%;
+      svg{
+         @media (max-width:480px) {
+        width: 20px;
+        height: 20px;
+     
+    }
+      }
     
     }
     .welcom_content{

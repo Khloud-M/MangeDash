@@ -64,6 +64,12 @@ hr {
   padding: 7px;
   border-radius: 50%;
 }
+@media (max-width: 480px) {
+  .header .icons div svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 .header .welcom_content {
   display: flex;
   flex-direction: row;
