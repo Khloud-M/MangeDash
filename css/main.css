@@ -108,7 +108,8 @@ hr {
     height: auto !important;
   }
 }
-.sideBar .logo, .sideBar .list {
+.sideBar .logo,
+.sideBar .list {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 15px;
@@ -116,7 +117,8 @@ hr {
   align-items: center;
   border-bottom: 1px solid #dfdfdf;
 }
-.sideBar .logo h2, .sideBar .list h2 {
+.sideBar .logo h2,
+.sideBar .list h2 {
   font-size: 1.25rem;
   color: #252525;
 }
@@ -134,6 +136,10 @@ hr {
        column-gap: 12px;
   transition: all 0.3s linear;
   cursor: pointer;
+}
+.sideBar .list img {
+  width: 45px;
+  border-radius: 50%;
 }
 .sideBar .list:last-child {
   border-bottom: none;
@@ -163,7 +169,6 @@ hr {
   width: calc(100% - 50px);
   margin: 50px auto;
   background-color: white;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.0196078431), 0 0 2px rgba(0, 0, 0, 0.0509803922), 0 1px 4px rgba(0, 0, 0, 0.0784313725) !important;
   height: 520px;
   padding: 40px 0;
@@ -196,60 +201,6 @@ hr {
   background-color: #5d4c72;
   right: 0;
   bottom: -16px;
-}
-.contant .inner_content {
-  border-bottom: 1px solid #dfdfdf;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Regular";
-}
-.contant .inner_content p {
-  color: #616161;
-  font-size: 1rem;
-  font-family: "SemiBold";
-  width: 250px;
-}
-.contant .inner_content span {
-  color: #5d4c72;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.contant .inner_content:last-child {
-  border-bottom: none;
-}
-
-.edit {
-  width: 120px;
-  background-color: #64748b;
-  padding: 5px;
-  margin: 15px auto;
-  border-radius: 0.25rem;
-  text-align: center;
-}
-@media (max-width: 480px) {
-  .edit {
-    width: 90px;
-    font-size: 12px;
-  }
-}
-.edit input {
-  background: transparent;
-  outline: none;
-  border-style: none;
-  color: white;
-  text-align: center;
-}
-@media (max-width: 480px) {
-  .edit input {
-    font-size: 12px;
-  }
-}
-
-.list img {
-  width: 45px;
-  border-radius: 50%;
 }
 
 form {
@@ -284,4 +235,22 @@ form textarea {
 form textarea:focus {
   border: 2px solid #5d4c72;
   outline: #5d4c72;
+}
+form input {
+  display: block;
+  background-color: #64748b;
+  width: 120px;
+  padding: 5px;
+  margin: 15px auto;
+  border-radius: 0.25rem;
+  outline: none;
+  border-style: none;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  form input {
+    font-size: 12px;
+    width: 90px;
+  }
 }/*# sourceMappingURL=main.css.map */
