@@ -230,15 +230,25 @@ body {
 }
 form{
   padding: 20px;
-  h4{
-    margin-right: 17px;
+  h5{
+    margin-right: 12px;
     font-size: 1.125rem;
     color: #616161;
   }
   textarea{
-    width: 98%;
+    display: block;
+    width: 99%;
     height: 80px;
-    margin: 15px auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    border:2px solid #616161;
+
+    padding: 15px;
+    &:focus{
+    border:2px solid #5d4c72;
+    outline: #5d4c72;
+
+    }
 
   }
 }
