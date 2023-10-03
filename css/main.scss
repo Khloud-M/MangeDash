@@ -264,6 +264,10 @@ form{
     margin-right: 12px;
     font-size: 1.125rem;
     color: #616161;
+     @media (max-width:480px) {
+      font-size: 0.9rem;
+     
+    }
   }
   textarea{
     display: block;
@@ -274,6 +278,10 @@ form{
     border:2px solid #616161;
 
     padding: 15px;
+     @media (max-width:480px) {
+      width: 100%;
+     
+    }
     &:focus{
     border:2px solid #5d4c72;
     outline: #5d4c72;
